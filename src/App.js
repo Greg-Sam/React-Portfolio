@@ -3,15 +3,26 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+
 function App() {
   return (
+
     <Router>
-      <Navbar />
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/saved'>
+            <Saved />
+          </Route>
+        </Switch>
+
+      </div>
+
     </Router>
+
   );
 }
 
