@@ -1,8 +1,15 @@
 import React from 'react'
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,
+  Route,
+  Switch
 } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
+
+
 
 function App() {
   return (
@@ -14,8 +21,11 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/saved'>
-            <Saved />
+          <Route path='/portfolio'>
+            <Portfolio />
+          </Route>
+          <Route path='/Contact'>
+            <Contact />
           </Route>
         </Switch>
 
