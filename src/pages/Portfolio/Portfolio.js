@@ -1,12 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
 import Crd from '../../components/Crd'
+import PasswordImg from '../../img/password.PNG'
+import CodeBookImg from '../../img/codebook.PNG'
+import CovidInformaImg from '../../img/COVIDINFORMA.PNG'
+import WeatherDashboardImg from '../../img/weatherDashboard.PNG'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 const portfolioInfo = [
   {
-    img: './img/codebook.PNG',
+    img: CodeBookImg,
     name: 'CodeBook',
     description: 'A simple app to help you keep track of all your coding accomplishments. CodeBook allows you to share your coding journey with classmates.',
     link: 'https://radiant-headland-26253.herokuapp.com/index.html',
@@ -31,7 +30,7 @@ const portfolioInfo = [
     cardType: 'grey'
   },
   {
-    img: './img/COVIDINFORMA.PNG',
+    img: CovidInformaImg,
     name: 'COVID Informa',
     description: 'Interactive map providing data visualization of realtime COVID 19 statistics. Made use of mapbox, apis, html, css and materialize.',
     link: 'https://nicouva.github.io/Project1-COVID19-Map/#',
@@ -39,7 +38,7 @@ const portfolioInfo = [
     cardType: 'maroon'
   },
   {
-    img: './img/weatherDashboard.PNG',
+    img: WeatherDashboardImg,
     name: 'Weather Dashboard',
     description: 'Searchable weather dashboard that provides current conditions and a five day forecast for cities around the world.',
     link: 'https://greg-sam.github.io/Weather-Dashboard/',
@@ -47,19 +46,11 @@ const portfolioInfo = [
     cardType: 'grey'
   },
   {
-    img: './img/password.PNG',
+    img: PasswordImg,
     name: 'Password Generator',
     description: 'This app receives user input and generates a strong password to meet their specifications',
     link: 'https://greg-sam.github.io/pw_gen/',
     github: 'https://github.com/Greg-Sam/pw_gen',
-    cardType: 'white'
-  },
-  {
-    img: './img/portfolio.jpg',
-    name: 'Portfolio',
-    description: 'This is the portfolio you are already viewing.',
-    link: 'https://greg-sam.github.io/react-portfolio/',
-    github: 'https://github.com/Greg-Sam/react-portfolio',
     cardType: 'white'
   },
 ]
@@ -77,35 +68,42 @@ const Portfolio = () => {
 
   return (
 
-  //   <Grid container className={classes.root} spacing={2}>
-  //     <Grid item xs={12}>
-  //       <Grid container justify="center" spacing={spacing}>
-  //         {[0, 1, 2].map((value) => (
-  //           <Grid key={value} item>
-  //             <Paper className={classes.paper} />
-  //           </Grid>
-  //         ))}
-  //       </Grid>
-  //     </Grid>
-  //   </Grid>
-  // );
+    <Grid container className={classes.root} spacing={2}>
+      <Grid item xs={12}>
+        <Grid container justify="center" spacing={spacing}>
+          {portfolioInfo.map((data, i) => (
+            <Grid key={i} item>
+              <Crd
+                img={data.img}
+                name={data.name}
+                description={data.description}
+                link={data.link}
+                github={data.github}
+                cardType={data.cardType}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
+    </Grid>
 
-<>
-  <h1>Portfolio Page</h1>
+
+    // <>
+    //   <h1>Portfolio Page</h1>
 
 
-  {
-    portfolioInfo.map((data, i) =>
-      <Crd
-        img={data.img}
-        name={data.name}
-        text={data.text}
-        link={data.link}
-        github={data.github}
-        cardType={data.cardType}
-      />)
-  }
-  </>
+    //   {
+    //     portfolioInfo.map((data, i) =>
+    //       <Crd
+    //         img={data.img}
+    //         name={data.name}
+    //         text={data.description}
+    //         link={data.link}
+    //         github={data.github}
+    //         cardType={data.cardType}
+    //       />)
+    //   }
+    //   </>
   )
 }
 

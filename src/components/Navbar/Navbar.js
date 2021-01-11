@@ -32,13 +32,13 @@ const Navbar = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          
           <Typography variant="h6" className={classes.title}>
-            News
+            Greg Samuelson
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" href="/">Home</Button>
+          <Button color="inherit" href='/portfolio'>Portfolio</Button>
+          <Button color="inherit" href='/contact'>Contact</Button>
         </Toolbar>
       </AppBar>
     </div>
