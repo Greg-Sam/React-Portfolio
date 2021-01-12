@@ -41,7 +41,7 @@ const Navbar = () => {
           <Button color="inherit" href='/React-Portfolio/contact'>Contact</Button>
         </Toolbar>
       </AppBar>
-    </div>
+    </div>  
   );
 
 //   return (
