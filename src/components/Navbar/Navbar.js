@@ -36,9 +36,9 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             Greg Samuelson
           </Typography>
-          <Button color="inherit" href="/">Home</Button>
-          <Button color="inherit" href='/portfolio'>Portfolio</Button>
-          <Button color="inherit" href='/contact'>Contact</Button>
+          <Button color="inherit" href="/React-Portfolio/">Home</Button>
+          <Button color="inherit" href='/React-Portfolio/portfolio'>Portfolio</Button>
+          <Button color="inherit" href='/React-Portfolio/contact'>Contact</Button>
         </Toolbar>
       </AppBar>
     </div>
