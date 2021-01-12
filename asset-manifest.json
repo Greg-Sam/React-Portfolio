@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.cb6dd1d2.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.31e19541.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.31e19541.chunk.js.map",
-    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.ba1c2482.js",
-    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.ba1c2482.js.map",
-    "static/js/2.8e7ccd08.chunk.js": "/React-Portfolio/static/js/2.8e7ccd08.chunk.js",
-    "static/js/2.8e7ccd08.chunk.js.map": "/React-Portfolio/static/js/2.8e7ccd08.chunk.js.map",
-    "index.html": "/React-Portfolio/index.html",
-    "static/css/main.cb6dd1d2.chunk.css.map": "/React-Portfolio/static/css/main.cb6dd1d2.chunk.css.map",
-    "static/js/2.8e7ccd08.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.8e7ccd08.chunk.js.LICENSE.txt",
-    "static/media/COVIDINFORMA.ffaf67a2.PNG": "/React-Portfolio/static/media/COVIDINFORMA.ffaf67a2.PNG",
-    "static/media/codebook.c11551d6.PNG": "/React-Portfolio/static/media/codebook.c11551d6.PNG",
-    "static/media/me.5bc4db54.jpg": "/React-Portfolio/static/media/me.5bc4db54.jpg",
-    "static/media/password.514d123b.PNG": "/React-Portfolio/static/media/password.514d123b.PNG",
-    "static/media/weatherDashboard.4392e720.PNG": "/React-Portfolio/static/media/weatherDashboard.4392e720.PNG"
+    "main.css": "/react-portfolio/static/css/main.cb6dd1d2.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.2f74a22a.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.2f74a22a.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.7686de59.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7686de59.js.map",
+    "static/js/2.8e7ccd08.chunk.js": "/react-portfolio/static/js/2.8e7ccd08.chunk.js",
+    "static/js/2.8e7ccd08.chunk.js.map": "/react-portfolio/static/js/2.8e7ccd08.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.cb6dd1d2.chunk.css.map": "/react-portfolio/static/css/main.cb6dd1d2.chunk.css.map",
+    "static/js/2.8e7ccd08.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.8e7ccd08.chunk.js.LICENSE.txt",
+    "static/media/COVIDINFORMA.ffaf67a2.PNG": "/react-portfolio/static/media/COVIDINFORMA.ffaf67a2.PNG",
+    "static/media/codebook.c11551d6.PNG": "/react-portfolio/static/media/codebook.c11551d6.PNG",
+    "static/media/me.5bc4db54.jpg": "/react-portfolio/static/media/me.5bc4db54.jpg",
+    "static/media/password.514d123b.PNG": "/react-portfolio/static/media/password.514d123b.PNG",
+    "static/media/weatherDashboard.4392e720.PNG": "/react-portfolio/static/media/weatherDashboard.4392e720.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba1c2482.js",
+    "static/js/runtime-main.7686de59.js",
     "static/js/2.8e7ccd08.chunk.js",
     "static/css/main.cb6dd1d2.chunk.css",
-    "static/js/main.31e19541.chunk.js"
+    "static/js/main.2f74a22a.chunk.js"
   ]
 }
