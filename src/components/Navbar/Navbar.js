@@ -32,42 +32,49 @@ const Navbar = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          
+
           <Typography variant="h6" className={classes.title}>
             Greg Samuelson
           </Typography>
-          <Button color="inherit" href="/react-portfolio/">Home</Button>
-          <Button color="inherit" href='/react-portfolio/portfolio'>Portfolio</Button>
-          <Button color="inherit" href='/react-portfolio/contact'>Contact</Button>
+
+          <Button color="inherit">
+            <Link to='/react-portfolio'>Home</Link>
+          </Button>
+          <Button color="inherit" >
+            <Link to='/react-portfolio/portfolio'>Portfolio</Link>
+          </Button>
+          <Button color="inherit" >
+            <Link to='/react-portfolio/contact'>Contact</Link>
+          </Button>
         </Toolbar>
       </AppBar>
-    </div>  
+    </div>
   );
 
-//   return (
-//     <>
-//       <Nvbr color="light" light expand="md">
-//         <NavbarBrand href="/">Greg Samuelson</NavbarBrand>
-//         <Nav className="mr-auto" navbar>
-//           <NavItem>
-//             <NavLink>
-//               <Link to="/">Home</Link>
-//             </NavLink>
-//           </NavItem>
-//           <NavItem>
-//             <NavLink>
-//               <Link to="/Contact">Contact</Link>
-//             </NavLink>
-//           </NavItem>
-//           <NavItem>
-//             <NavLink>
-//               <Link to="/Portfolio">Portfolio</Link>
-//             </NavLink>
-//           </NavItem>
-//         </Nav>
-//       </Nvbr>
-//     </>
-//   )
+  //   return (
+  //     <>
+  //       <Nvbr color="light" light expand="md">
+  //         <NavbarBrand href="/">Greg Samuelson</NavbarBrand>
+  //         <Nav className="mr-auto" navbar>
+  //           <NavItem>
+  //             <NavLink>
+  //               <Link to="/">Home</Link>
+  //             </NavLink>
+  //           </NavItem>
+  //           <NavItem>
+  //             <NavLink>
+  //               <Link to="/Contact">Contact</Link>
+  //             </NavLink>
+  //           </NavItem>
+  //           <NavItem>
+  //             <NavLink>
+  //               <Link to="/Portfolio">Portfolio</Link>
+  //             </NavLink>
+  //           </NavItem>
+  //         </Nav>
+  //       </Nvbr>
+  //     </>
+  //   )
 }
 
 export default Navbar
