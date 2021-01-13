@@ -73,10 +73,10 @@ console.log(cardType)
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" href={props.link}>
+          <Button variant="contained" size="small" color="default" href={props.link}>
             Visit
         </Button>
-          <Button size="small" color="primary" href={props.github}>
+          <Button variant="contained" size="small" color="default" href={props.github}>
             <GitHubIcon />
             GitHub 
         </Button>

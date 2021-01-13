@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Crd from '../../components/Crd'
 import PasswordImg from '../../img/password.PNG'
 import CodeBookImg from '../../img/codebook.PNG'
@@ -12,7 +14,8 @@ import WorkDayImg from '../../img/WorkDay.PNG'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginTop: 15
+    marginTop: 15,
+    minWidth: 375
   },
   paper: {
     height: 140,
@@ -86,7 +89,9 @@ const Portfolio = () => {
 
 
   return (
-
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="sm">
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
@@ -105,7 +110,8 @@ const Portfolio = () => {
         </Grid>
       </Grid>
     </Grid>
-
+      </Container>
+    </React.Fragment>
 
     // <>
     //   <h1>Portfolio Page</h1>
