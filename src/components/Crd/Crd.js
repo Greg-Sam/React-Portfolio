@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     color: "black"
   },
   media: {
-    height: 50,
+    height: 116,
   },
 });
 

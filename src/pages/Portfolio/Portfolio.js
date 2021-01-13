@@ -6,10 +6,13 @@ import PasswordImg from '../../img/password.PNG'
 import CodeBookImg from '../../img/codebook.PNG'
 import CovidInformaImg from '../../img/COVIDINFORMA.PNG'
 import WeatherDashboardImg from '../../img/weatherDashboard.PNG'
+import FitnessImg from '../../img/fitness.png'
+import WorkDayImg from '../../img/WorkDay.PNG'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: 15
   },
   paper: {
     height: 140,
@@ -53,6 +56,22 @@ const portfolioInfo = [
     github: 'https://github.com/Greg-Sam/pw_gen',
     cardType: 'white'
   },
+  {
+    img: FitnessImg,
+    name: 'Fitness Tracker',
+    description: 'This fitness app allows you to view, create and track daily workouts. You can log multiple exercises in a workout on a given day. You can also track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, you can track your distance traveled.',
+    link: 'https://intense-anchorage-28961.herokuapp.com/',
+    github: 'https://github.com/Greg-Sam/fitness-tracker',
+    cardType: 'grey'
+  },
+  {
+    img: WorkDayImg,
+    name: 'Day Planner',
+    description: 'This day planner is for keeping track of your schedule on a busy work day. The time blocks change based on current hour, previous hours and future hours.',
+    link: 'https://greg-sam.github.io/Day-Planner/',
+    github: 'https://github.com/Greg-Sam/Day-Planner',
+    cardType: 'maroon'
+  }
 ]
 
 

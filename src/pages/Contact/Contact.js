@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
@@ -44,7 +45,7 @@ const Contact = () => {
 
   return (
     <>
-    
+
       <CssBaseline />
       <Container maxWidth="sm">
         <Card className={classes.root}>
@@ -55,18 +56,23 @@ const Contact = () => {
             <Typography className={classes.title} gutterBottom>
               <MailOutlineIcon /> grssam@gmail.com
               </Typography>
-        <Typography className={classes.title} gutterBottom>
+            <Typography className={classes.title} gutterBottom>
+              <Link href="https://twitter.com/_GregSam" >
                 <TwitterIcon /> _gregsam
-        </Typography>
+                </Link>
+            </Typography>
             <Typography className={classes.title} gutterBottom>
-              <GitHubIcon /> Greg-Sam
-              </Typography>
+              <Link href="https://github.com/Greg-Sam" >
+                <GitHubIcon /> Greg-Sam
+             </Link>
+            </Typography>
             <Typography className={classes.title} gutterBottom>
-              <LinkedInIcon /> linkedin.com/in/greg-samuelson
-        </Typography>
-            <Typography className={classes.title} gutterBottom>
-              <LinkedInIcon /> linkedin.com/in/greg-samuelson
-        </Typography>
+              <Link href="https://www.linkedin.com/in/greg-samuelson" >
+                <LinkedInIcon /> linkedin.com/in/greg-samuelson
+      </Link>
+
+            </Typography>
+
             <Typography variant="h4" component="h2">
               Complete this form
         </Typography>
@@ -75,7 +81,9 @@ const Contact = () => {
             <TextField id="standard-basic" label="name" />
             <TextField id="standard-basic" label="email" />
             <TextField id="messageText" label="message" multiline rows={4} variant="outlined" fullWidth />
-            
+            <Button variant="contained" color="primary">
+              Submit
+</Button>
           </form>
         </Card>
       </Container>

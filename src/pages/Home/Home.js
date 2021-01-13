@@ -21,6 +21,8 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 18,
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
   pos: {
     marginBottom: 12,
