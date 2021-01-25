@@ -10,6 +10,7 @@ import CovidInformaImg from '../../img/COVIDINFORMA.PNG'
 import WeatherDashboardImg from '../../img/weatherDashboard.PNG'
 import FitnessImg from '../../img/fitness.png'
 import WorkDayImg from '../../img/WorkDay.PNG'
+import SellersRemorse from '../../img/sellersremorse.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,6 +28,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const portfolioInfo = [
+  {
+    img: SellersRemorse,
+    name: "Seller's Remorse",
+    description: "Seller's Remorse is an e- comerce website for finding a new home for your used items or finding the perfect second hand solution to meet your needs.It's a perfect way to go garage saleing without risking exposure to the Corona Virus.",
+    link: 'https://evening-reef-86897.herokuapp.com/',
+    github: 'https://github.com/Greg-Sam/project-3',
+    cardType: 'white'
+  },
   {
     img: CodeBookImg,
     name: 'CodeBook',

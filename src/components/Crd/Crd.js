@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   color: "ivory"
   },
   white: {
-    backgroundColor: "white",
+    backgroundColor: "ivory",
     color: "black"
   },
   media: {
@@ -56,7 +56,7 @@ console.log(cardType)
 
   return (
     <>
-      <Card className={getType()}>
+      <Card className= "card_body">
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -71,8 +71,8 @@ console.log(cardType)
               {props.description}
           </Typography>
           </CardContent>
-        </CardActionArea>
-        <CardActions>
+        </CardActionArea >
+        <CardActions className="card_actions">
           <Button variant="contained" size="small" color="default" href={props.link}>
             Visit
         </Button>
