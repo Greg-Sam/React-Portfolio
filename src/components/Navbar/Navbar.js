@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+  },
+  MuiButtonBase: {
+    margin: 5
   }
 }));
 
@@ -37,13 +40,13 @@ const Navbar = () => {
             Greg Samuelson
           </Typography>
 
-          <Button color="inherit">
+          <Button variant="contained" color="default">
             <Link to='/react-portfolio'>Home</Link>
           </Button>
-          <Button color="inherit" >
+          <Button variant="contained" color="default" >
             <Link to='/react-portfolio/portfolio'>Portfolio</Link>
           </Button>
-          <Button color="inherit" >
+          <Button   variant="contained" color="default" >
             <Link to='/react-portfolio/contact'>Contact</Link>
           </Button>
         </Toolbar>
